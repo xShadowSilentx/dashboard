@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="icon" type="image/png" href="assets/images/desarrollador.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
+</head>
+
+<body>
+
+
+
+    <div class="menu">
+        <ul class="fondo-menu">
+            <li><a href="#dashboard"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+            <li><a href="#organigramas"><i class="bi bi-diagram-3"></i> Organigramas</a></li>
+            <li><a href="#puestos"><i class="bi bi-briefcase"></i> Puestos</a></li>
+            <li><a href="#evaluaciones"><i class="bi bi-clipboard-data"></i> Evaluaciones</a></li>
+            <li><a href="#formacion"><i class="bi bi-mortarboard"></i> Planes de formación</a></li>
+            <li><a href="#carrera"><i class="bi bi-people-fill"></i> Planes de carrera</a></li>
+            <li><a href="#seleccion"><i class="bi bi-person-check"></i> Selección</a></li>
+            <li class="mt-5 pointer-events-none"><a href="">Configuración</a></li>
+            <hr class="hr-menu">
+            <li><a href="#usuario"><i class="bi bi-person"></i> Usuario</a></li>
+            <li><a href="#logout"><i class="bi bi-box-arrow-right"></i> Cerrar sesión</a></li>
+        </ul>
+    </div>
+
+
+    <div class="dashboard" id="dashboard">
+
+        <h1>Dashboard</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="row col-md-12 align-items-stretch">
+                    <div class="col-md-5 d-flex align-items-center justify-content-start">
+                        <h5 class="my-auto">¡Hola, Bienvenido a!</h5>
+                    </div>
+
+                    <div class="col-md-3">
+                        <form class="d-flex h-100">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-4 d-flex align-items-center justify-content-end">
+                        <button type="button"
+                            class="btn btn-circle bg-light me-2 align-self-stretch d-flex align-items-center justify-content-center altura-btn-cabecera">
+                            <i class="bi bi-bell-fill fs-4"></i>
+                        </button>
+                        <button type="button"
+                            class="btn btn-circle bg-light d-flex align-items-center justify-content-center align-self-stretch altura-btn-cabecera">
+                            <i class="bi bi-person-circle fs-4 me-2"></i>
+                            <div>
+                                <div class="text-nowrap">Usuario</div>
+                                <div class="text-secondary text-nowrap">Rol usuario</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="col-md-12 row mt-5">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="titulo-icono-wrapper">
+                            <h5 class="card-title">OnBoarding</h5>
+                            <i class="bi bi-archive fs-1"></i>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">16%</h6>
+                        <div class="progress">
+                            <div class="progress-bar progreso-16" role="progressbar" aria-valuenow="16"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="titulo-icono-wrapper">
+                            <h5 class="card-title">Legajos Digitales</h5>
+                            <i class="bi bi bi-card-heading fs-1"></i>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">25%</h6>
+                        <div class="progress">
+                            <div class="progress-bar progreso-25" role="progressbar" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="titulo-icono-wrapper">
+                            <h5 class="card-title">Comunicaciones</h5>
+                            <i class="bi bi-people-fill fs-1"></i>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">18%</h6>
+                        <div class="progress">
+                            <div class="progress-bar progreso-18" role="progressbar" aria-valuenow="18"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="titulo-icono-wrapper">
+                            <h5 class="card-title">Planificación</h5>
+                            <i class="bi bi-stopwatch-fill fs-1"></i>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">30%</h6>
+                        <div class="progress">
+                            <div class="progress-bar progreso-30" role="progressbar" aria-valuenow="30"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 mt-2">
+            <div class="card">
+                <div class="card-header">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            Reportes
+
+                        </div>
+                        <div class="col-md-6 text-end">
+                            Indicadores KPI
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <canvas id="myChart" width="400" height="100"></canvas>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row mt-2">
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Formularios</h5>
+                        <hr>
+
+                        <div class="row alineados">
+                            <div class="col-md-6 linea-vertical">
+                                <ul>
+                                    <li>Acuerdo de partes</li>
+                                    <li>Cambio de domicilio</li>
+                                    <li>Seguro de vida</li>
+                                    <li>Registro entrega ropa y ERP</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Pedido de búsqueda</li>
+                                    <li>Pedido de incorporación</li>
+                                    <li>Entrevista de salida</li>
+                                    <li>Certificados de trabajo</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Control de ausentismo</h5>
+                        <div class="titulo-icono-wrapper">
+                            <h1 class="card-subtitle mb-2 text-muted">2</h1>
+                            <i class="bi bi-megaphone-fill fs-1"></i>
+                        </div>
+                        <p>Notificaciones</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Recibos de haberes</h5>
+                        <div class="titulo-icono-wrapper">
+                            <h1 class="card-subtitle mb-2 text-muted">5</h1>
+                            <i class="bi bi-pencil-fill fs-1"></i>
+                        </div>
+                        <p>Firmas de haberes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="assets/js/graficos.js?v=1.0.0"></script>
+</body>
+
+</html>
